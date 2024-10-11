@@ -1,0 +1,113 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 450px;
+    text-align: left;
+    position: relative;
+    border-top: 8px solid #00acc1;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 28px;
+    color: #004d40;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #004d40;
+    margin-top: 15px;
+}
+
+.value {
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f0f4f8;
+    color: #004d40;
+    border-left: 6px solid #00acc1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.value:nth-child(2) {
+    border-left-color: #ff7043;
+}
+
+.value:nth-child(4) {
+    border-left-color: #4caf50;
+}
+
+.value:nth-child(6) {
+    border-left-color: #7e57c2;
+}
+
+p.thankyou {
+    font-size: 17px;
+    color: #00796b;
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+button {
+    display: block;
+    background: linear-gradient(45deg, #00acc1, #00796b);
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00796b, #004d40);
+    transform: scale(1.05);
+}
+
+button:active {
+    background: linear-gradient(45deg, #004d40, #00251a);
+}
