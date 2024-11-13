@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.header-icons img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.header-icons img:hover {
+    transform: scale(1.1); 
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Menambahkan style untuk section About me */
+section {
+    display: flex;
+    flex-direction: column; /* Mengubah layout menjadi kolom */
+    align-items: flex-start; /* Menyusun teks ke kiri */
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menata teks dalam section */
+section h2, section p {
+    margin: 0;
+    padding-right: 20px; /* Memberikan ruang antara teks dan gambar */
+    margin-bottom: 10px; /* Memberikan jarak antara elemen teks */
+}
+
+/* Menata gambar */
+section img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
